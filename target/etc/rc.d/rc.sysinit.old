@@ -1,0 +1,26 @@
+#!/bin/sh
+
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:
+export PATH
+if [ -f /etc/sysconfig/network ]; then
+. /etc/sysconfig/network
+else
+NETWORKING=no
+HOSTNAME=localhost
+fi
+echo “Setting hostname ${HOSTNAME}”
+hostname ${HOSTNAME}
+echo “Mounting proc filesystem”
+mount -n -t proc /proc /proc
+echo “Remounting root filesystem in read-write mode”
+mount -n -o remount,rw /
+mount -f /
+mount -f /proc
+
+#mkdir /dev/input
+#mkdir /dev/snd
+
+mdev -s
+
+#/sbin/ifconfig lo 127.0.0.1 netmask 255.0.0.0
+#/sbin/ifconfig eth0 192.168.56.91 netmask 255.255.255.0

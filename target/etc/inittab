@@ -1,0 +1,13 @@
+id:3:initdefault:
+
+si::sysinit:/etc/rc.d/rc.sysinit
+
+~~:S:wait:/sbin/sulogin
+
+ca::ctrlaltdel:/sbin/shutdown -t3 -r now
+pf::powerfail:/sbin/shutdown -f -h +2 “Power Failure:System Shutting Down”
+pr:12345:powerokwait:/sbin/shutdown -c “Power Restored:Shutdown Cancelled”
+#1:2345:respawn:/sbin/getty 115200 console
+#1:2345:respawn:/sbin/getty -L s3c2410_serial1 115200 vt100
+#1:2345:respawn:/sbin/getty 115200 tty1
+1:2345:respawn:/sbin/getty 115200 console
