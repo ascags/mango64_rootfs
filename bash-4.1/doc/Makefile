@@ -31,7 +31,7 @@ topdir = ..
 srcdir = .
 VPATH = .
 
-prefix = /nfsroot/RooFS
+prefix = /nfsroot/RootFS
 exec_prefix = ${prefix}
 
 datarootdir = ${prefix}/share

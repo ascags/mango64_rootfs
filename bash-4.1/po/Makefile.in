@@ -21,7 +21,7 @@ top_srcdir = ..
 topdir = ..
 BUILD_DIR = /root/mango64/mango64_rootfs/bash-4.1
 
-prefix = /nfsroot/RooFS
+prefix = /nfsroot/RootFS
 exec_prefix = ${prefix}
 
 datarootdir = ${prefix}/share

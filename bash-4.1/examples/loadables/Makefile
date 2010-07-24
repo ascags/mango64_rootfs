@@ -18,7 +18,7 @@
 #
 
 # Include some boilerplate Gnu makefile definitions.
-prefix = /nfsroot/RooFS
+prefix = /nfsroot/RootFS
 
 exec_prefix = ${prefix}
 bindir = ${exec_prefix}/bin

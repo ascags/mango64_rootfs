@@ -117,7 +117,7 @@ been enabled, more detailed usage information will also be available.</p>
         arp, awk, basename, cal, cat, chattr, chgrp, chmod, chown, clear,
         cp, cut, date, dd, depmod, df, dmesg, dnsdomainname, echo, egrep,
         env, false, fgrep, find, fsck, ftpget, ftpput, getty, grep, gunzip,
-        gzip, head, hostid, hostname, ifconfig, insmod, kill, killall,
+        gzip, head, hostid, hostname, id, ifconfig, insmod, kill, killall,
         killall5, ln, login, logname, lpd, lpq, lpr, ls, lsattr, lsmod,
         mdev, mesg, mkdir, mkfifo, mknod, mkswap, modinfo, modprobe, more,
         mount, mv, netstat, nice, od, passwd, pidof, ping, ping6, printenv,
@@ -571,6 +571,19 @@ With more than one FILE, precede each with a filename header.</p>
         -d      DNS domain name
         -f      Fully qualified domain name
         -F FILE Use FILE's content as hostname</pre>
+</dd>
+<dt><strong><a name="id" class="item"><strong>id</strong></a></strong></dt>
+
+<dd>
+<p>id [OPTIONS] [USER]</p>
+<p>Print information about USER or the current user</p>
+<p>Options:</p>
+<pre>
+        -u      Print user ID
+        -g      Print group ID
+        -G      Print supplementary group IDs
+        -n      Print name instead of a number
+        -r      Print real user ID instead of effective ID</pre>
 </dd>
 <dt><strong><a name="ifconfig" class="item"><strong>ifconfig</strong></a></strong></dt>
 

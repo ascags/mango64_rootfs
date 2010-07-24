@@ -25,7 +25,7 @@ top_srcdir = ../..
 top_builddir = /root/mango64/mango64_rootfs/bash-4.1
 
 
-prefix = /nfsroot/RooFS
+prefix = /nfsroot/RootFS
 exec_prefix = ${prefix}
 transform = s,x,x,
 

@@ -9,7 +9,7 @@
 #
 
 CC = arm-s3c6410-linux-gnueabi-gcc
-#ROOT = ../../target
+ROOT = /nfsroot/RootFS
 
 CPPFLAGS =
 CFLAGS	?= -ansi -O2 -fomit-frame-pointer 
@@ -135,6 +135,7 @@ cleanobjs:
 
 clean:		cleanobjs
 		@echo Type \"make clobber\" to really clean up.
+		rm -f $(BIN) $(SBIN) $(USRBIN)
 
 clobber:	cleanobjs
 		rm -f $(BIN) $(SBIN) $(USRBIN)

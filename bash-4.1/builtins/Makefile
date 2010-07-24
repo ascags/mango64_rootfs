@@ -33,7 +33,7 @@ CP = cp
 
 EXEEXT = 
 
-prefix = /nfsroot/RooFS
+prefix = /nfsroot/RootFS
 
 srcdir = .
 VPATH = .
